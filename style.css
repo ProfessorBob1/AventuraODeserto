@@ -1,0 +1,35 @@
+.passo {
+    display: none;
+}
+
+.passo.ativo{
+    display:block;
+}
+
+body{
+background-color:rgb(193, 147, 61);
+color:rgb(77, 13, 196);
+font-family: "Martian Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+    font-size: large;
+}
+
+button {
+    background-color: hsla(256, 81%, 59%, 0.363);
+    color: rgb(195, 247, 5);
+    font-family: "Martian Mono", monospace;
+    font-size:small;
+}
+
+main {
+    max-width: 90%;
+    text-align:center;
+}
+
+img {
+    max-width: 40%;
+}

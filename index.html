@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Deserto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="Imagens/deserto-passo0.png">
+            <p>Você acorda em um deserto. O Sol brilhando mais forte do que você se lembra, te cega com uma luz branca
+                pura. O calor faz sua pele arder e logo você percebe a sede e a desidratação acumulando. Atrás de você,
+                o deserto se estende até onde a vista alcança. A sua frente, duas silhuetas colossais de forma
+                retangular se erguem.</p>
+            <button class="btn-proximo" data-proximo="1">Ir até as silhuetas</button>
+            <button class="btn-proximo" data-proximo="2">Avançar pelo deserto</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="Imagens/deserto-passo1.png">
+            <p>Após alguns minutos exaustivos de caminhada, que pareceram horas, você se aproxima das silhuetas. Logo de
+                cara percebe que se parecem com construções gloriosas de outrora, conhecidas como arranha-céus. Ambos
+                parecem bem desgastados mas sua estrutura interna se mantém, você pode achar algum recuros dentro, ou
+                pode prosseguir pelo deserto a frente.</p>
+            <button class="btn-proximo" data-proximo="3">Entrar no primeiro prédio</button>
+            <button class="btn-proximo" data-proximo="4">Prosseguir pelo deserto</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Você está exausto. Entrar no prédio seria um gasto de energia que você não quer desperdiçar.
+                Você segue caminho passando por ambos os prédios. Após algumas horas de caminhada, logo a frente você vê
+                um vale e observa um lago neste vale. Você pode descer até o lago ou continuar a viagem.</p>
+            <button class="btn-proximo" data-proximo="4.1">Continuar a viagem</button>
+            <button class="btn-proximo" data-proximo="4.2">Descer até o lago</button>
+        </div>
+
+        <div class="passo" id="passo-4.1">
+            <img src="Imagens/arrastar-passo4.1.png">
+            <p>Após horas de caminhada, o calor e a sede te vencem. Você começa a se arrastar pelo deserto, sentindo aos
+                poucos suas forças se esvaindo e um frio tomando conta do seu corpo, você lentamente fecha os olhos.</p>
+            <button class="btn-proximo" data-proximo="0">A claridade te incomoda</button>
+        </div>
+
+        <div class="passo" id="passo-4.2">
+            <img src="Imagens/lago-passo4.2.png">
+            <p>Você desce até o lago. Quanto mais você se aproxima, mais a água parece recuar. Suas esperanças diminuem
+                a cada passo que você dá. Logo você percebe a armadilha que você se enfiou. Uma miragem. Você já está
+                sem forças para subir o vale, a areia torna tudo mais difícil. Você é vencido pelo calor e pela sede,
+                sentindo aos poucos suas forças se esvaindo e um frio tomando conta do seu corpo, você lentamente fecha
+                os olhos.</p>
+            <button class="btn-proximo" data-proximo="0">A claridade te incomoda</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="Imagens/arrastar-passo4.1.png">
+            <p>Após várias horas de caminhada, o calor e a sede te vencem. Você começa a se arrastar pelo deserto,
+                sentindo aos poucos suas forças se esvaindo e um frio tomando conta do seu corpo, você lentamente fecha
+                os olhos.</p>
+            <button class="btn-proximo" data-proximo="0">A claridade te incomoda</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>Dentro do prédio você observa móveis desgatados, sobrando quase que praticamente só a estrutura metálica
+                do que já fora mesas e cadeiras. Algumas partes plásticas se encontram espalhadas.
+                Você passa por uma porta que leva ao corredor, na parede você vê um mapa. Duas direções se destacam,
+                Para cima o andar executivo. Para baixo o depósito.</p>
+            <button class="btn-proximo" data-proximo="6.1">Seguir para o andar executivo</button>
+            <button class="btn-proximo" data-proximo="6.2">Seguir para o depósito</button>
+        </div>
+
+        <div class="passo" id="passo-6.1">
+            <img src="Imagens/cofre-passo6.1.png">
+            <p>Ao pisar no andar executivo você escuta o som de algo colapsando, olhando para baixo, a escada que dava
+                acesso ao depósito agora é uma pilha de escombros.Ao adentrar na primeira sala do andar executivo
+                encontra uma estrutura metálica semi aberta, um cofre. Dentro dele alguns discos rígidos que por um
+                milagre ainda permanecem inteiros, nas etiquetas você consegue ler com muita dificuldade algo como
+                “A__CA__PSE”. Você coleta os HDs e não parece ter nada mais relevante no prédio, sobrando um destino</p>
+            <button class="btn-proximo" data-proximo="6.3">Sair do prédio</button>
+        </div>
+
+        <div class="passo" id="passo-6.3">
+            <p>Ao sair do prédio o calor do deserto volta a te assolar de uma forma ainda mais punitiva. Você não
+                percebeu mas passou horas explorando o prédio. O sol está bem central, o que significa que é por
+                volta do meio dia.</p>
+            <button class="btn-proximo" data-proximo="8">Olhar ao redor</button>
+        </div>
+
+        <div class="passo" id="passo-8.1">
+            <img src="Imagens/predio-passo8.1.png">
+            <p>Você vê o outro prédio, por algum motivo você percebe uma luz diferente vindo de dentro de uma das
+                janelas. Você vê também a planice contínua do deserto se estendendo no que parece ser o infinito.</p>
+            <button class="btn-proximo" data-proximo="9.3">Ir para o segundo prédio</button>
+        </div>
+
+        <div class="passo" id="passo-9.3">
+            <p>Ao chegar no segundo prédio, você percebe que ele se encontra no mesmo estado do primeiro. Uma porta ao
+                final
+                da sala leva a um corredor com um mapa com uma escrita apagada, você consegue ler algumas letras
+                “VE_D_DE”.
+                Você sente como se devesse subir as escadas.</p>
+            <button class="btn-proximo" data-proximo="10.3">Subir as escadas</button>
+            <button class="btn-proximo" data-proximo="10.4">Voltar atrás</button>
+        </div>
+
+        <div class="passo" id="passo-10.3">
+            <img src="Imagens/corredor-passo10.1.png">
+            <p>Você explora diversos andares, o prédio parece ter muito mais andares por dentro do que visto por fora.
+                Aquele brilho estranho que você viu parece te chamar. Você continua a subir pelo que parecem horas. Cada
+                andar que você sobe parece ficar mais quente que o anterior, logo a fome começa a te devorar por dentro
+                e
+                você anseia por um gole de água. Você vê um corredor comprido, nele há duas portas entre-abertas</p>
+            <button class="btn-proximo" data-proximo="11.3">Abrir porta da direita</button>
+            <button class="btn-proximo" data-proximo="11.4">Abrir porta da esquerda</button>
+        </div>
+
+        <div class="passo" id="passo-11.3">
+            <img src="Imagens/porta-direita-passo11.1.png">
+            <p>A porta está levemente emperrada. Você insiste e empurra com toda a sua força. No primeiro passo sala a
+                dentro a estrutura do prédio cede e um buraco se abre com seu peso. Você despenca alguns andares e cai
+                de costas no chão. Em um primeiro momento a dor é excruciante e você sente um líquido quente banhando
+                seu corpo. No momento seguinte, aos poucos, sente suas forças se esvaindo e um frio tomando conta do seu
+                corpo, você lentamente fecha os olhos</p>
+            <button class="btn-proximo" data-proximo="0">A claridade te incomoda</button>
+        </div>
+
+        <div class="passo" id="passo-11.4">
+            <img src="Imagens/computador-passo11.2.png">
+            <p>Você encontra um computador, de alguma forma ele está funcionando e está ligado porém só se vê estática
+                na tela. No gabinete um cabo se destaca, parece encaixar perfeitamente em um HD.
+                Você não encontrou nenhum HD na sua breve jornada, mas algo lhe diz que no andar executivo do prédio
+                anterior poderia ter o que você precisa</p>
+            <button class="btn-proximo" data-proximo="11.5">Descer as escadas</button>
+        </div>
+
+        <div class="passo" id="passo-11.5">
+            <p>Você começa a descer as escadas mas a fome e a sede são implacáveis. Você começa a se arrastar pelas
+                escadas sentindo aos poucos suas forças se esvaindo e um frio tomando conta do seu corpo, você
+                lentamente fecha os olhos.</p>
+            <button class="btn-proximo" data-proximo="0">A claridade te incomoda</button>
+        </div>
+
+        <div class="passo" id="passo-6.2">
+            <img src="Imagens/armario-passo6.2.png">
+            <p>No depósito você encontra diversos armários abertos e enferrujados. A poeira preenche o ar e você se
+                sente sufocado. Apesar da dificuldade de respirar, uma comporta no chão chama a sua atenção. Você abre
+                e encontra uma espécie de capsula do tempo. Dentro da capsula você encontra um cantil e uma sopa
+                enlatada cujo rótulo se apagou há muito tempo. Você toma um gole da água e se controla para não secar o
+                cantil de uma vez só.
+                Olhar para a sopa em suas mãos faz seu estomago roncar e te lembrar da fome que você está sentindo
+                porém, o estado da lata te desperta certo receio.</p>
+            <button class="btn-proximo" data-proximo="7.1">Comer a sopa</button>
+            <button class="btn-proximo" data-proximo="6.4">Deixar a sopa e sair do prédio</button>
+        </div>
+
+        <div class="passo" id="passo-7.1">
+            <img src="Imagens/sopa-passo7.1.png">
+            <p>Tudo bem que comidas enlatadas costumam durar mais, porém, parece que centenas de anos se passaram desde
+                que essa sopa foi feita, nada resistiria a todo esse tempo e essa sopa não é exceção. Você sente seu
+                interior se revirar, você arde em febre. A comida não sai, mas também não digere. Suas entranhas gritam
+                em desespero. Aos poucos você sente suas forças se esvaindo e um frio tomando conta do seu corpo, você
+                lentamente fecha os olhos.</p>
+            <button class="btn-proximo" data-proximo="0">A claridade te incomoda</button>
+        </div>
+
+        <div class="passo" id="passo-6.4">
+            <p>Ao sair do prédio o calor do deserto volta a te assolar de uma forma ainda mais punitiva. Você não
+                percebeu mas passou horas explorando o prédio. O sol está bem central, o que significa que é por
+                volta do meio dia.</p>
+            <button class="btn-proximo" data-proximo="8.1">Olhar ao redor</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="Imagens/predio-passo8.1.png">
+            <p>Você vê o outro prédio, por algum motivo você percebe uma luz diferente vindo de dentro de uma das
+                janelas. Você vê também a planice contínua do deserto se estendendo no que parece ser o infinito.</p>
+            <button class="btn-proximo" data-proximo="9.1">Ir para o segundo prédio</button>
+            <button class="btn-proximo" data-proximo="9.2">Ir pelo deserto</button>
+        </div>
+
+        <div class="passo" id="passo-9.2">
+            <img src="Imagens/caminhada-passo9.2.png">
+            <p>Você caminha horas a fio, sem uma sombra, sem uma estrutura, sem nada a vista. Sem água e sentindo uma
+                sede absurda, você luta pra continuar em frente.
+                Você caminha, caminha e caminha. Tudo a sua volta é o mais puro
+                deserto.</p>
+            <button class="btn-proximo" data-proximo="4">Prosseguir pelo deserto</button>
+        </div>
+
+        <div class="passo" id="passo-9.1">
+            <p>Ao chegar no segundo prédio, você percebe que ele se encontra no mesmo estado do primeiro. Uma porta ao
+                final da sala leva a um corredor com um mapa com uma escrita apagada, você consegue ler algumas letras
+                “VE_D_DE”. Você sente como se deve-se subir as escadas</p>
+            <button class="btn-proximo" data-proximo="10.1">Subir as escadas</button>
+            <button class="btn-proximo" data-proximo="10.2">Voltar atrás</button>
+        </div>
+
+        <div class="passo" id="passo-10.4">
+            <p>Você se sente inseguro de seguir no prédio e decide procurar mais alguma coisa pelo deserto.</p>
+            <button class="btn-proximo" data-proximo="9.2">Ir pelo deserto</button>
+        </div>
+
+        <div class="passo" id="passo-10.2">
+            <p>Você se sente inseguro de seguir no prédio e decide procurar mais alguma coisa pelo deserto.</p>
+            <button class="btn-proximo" data-proximo="9.2">Ir pelo deserto</button>
+        </div>
+
+        <div class="passo" id="passo-10.1">
+            <img src="Imagens/corredor-passo10.1.png">
+            <p>Você explora diversos andares, o prédio parece ter muito mais andares por dentro do que visto por fora.
+                Aquele brilho estranho que você viu parece te chamar. Você continua a subir pelo que parecem horas. Cada
+                andar que você sobe parece ficar mais quente que o anterior, logo a fome começa a te devorar por dentro
+                e você anseia por um gole d’água. Você vê um corredor comprido, nele há duas portas entre-abertas</p>
+            <button class="btn-proximo" data-proximo="11.1">Abrir porta da direita</button>
+            <button class="btn-proximo" data-proximo="11.2">Abrir porta da esquerda</button>
+        </div>
+
+        <div class="passo" id="passo-11.1">
+            <img src="Imagens/porta-direita-passo11.1.png">
+            <p>A porta está levemente emperrada. Você insiste e empurra com toda a sua força. No primeiro passo sala a
+                dentro a estrutura do prédio cede e um buraco se abre com seu peso. Você despenca alguns andares e cai
+                de costas no chão. Em um primeiro momento a dor é excruciante e você sente um líquido quente banhando
+                seu corpo. No momento seguinte, aos poucos, sente suas forças se esvaindo e um frio tomando conta do seu
+                corpo, você lentamente fecha os olhos</p>
+            <button class="btn-proximo" data-proximo="0">A claridade te incomoda</button>
+        </div>
+
+        <div class="passo" id="passo-11.2">
+            <img src="Imagens/computador-passo11.2.png">
+            <p>Ao abrir a porta, no fundo da sala, sob uma bancada velha, você encontra um computador, de alguma forma
+                ele
+                está funcionando e está ligado porém só se vê estática na tela. No gabinete um cabo se destaca, parece
+                encaixar perfeitamente em um HD.
+                Você se lembra do HD que coletou no andar executivo.</p>
+            <button class="btn-proximo" data-proximo="12.1">Conectar o HD</button>
+        </div>
+
+        <div class="passo" id="passo-12.1">
+            <p>Ao conectar o HD, um único arquivo de vídeo intitulado “Apocalipse” aparece.
+                Ao iniciar o vídeo, ele parece ter trechos corrompidos, porém o vídeo inicia em uma qualidade
+                baixíssima.
+                Uma voz cheia de estática começa a falar, você não consegue enxergar o rosto por trás da voz.
+                “Projeto Apocalipse, décima quinta tentativa, ano de viagem 2054”
+                CHIADO</p>
+            <button class="btn-proximo" data-proximo="12.2">Dar um tapão no monitor</button>
+        </div>
+
+        <div class="passo" id="passo-12.2">
+            <p>O monitor volta. “Acredito que o projeto irá nos permitir fazer uma previsão do quão estará nosso futuro.
+                Talvez assim, quando eu voltar, podemos tentar mudar alguma coisa. Bom, seja o que for. Iniciar
+                contagem”
+                Ao fundo se escuta alguns sons agudos de botões sendo acionados e um motor ligando. “3...” começa a
+                contagem
+            </p>
+            <button class="btn-proximo" data-proximo="12.3">2... 1.... Você fala com a sua voz</button>
+        </div>
+
+        <div class="passo" id="passo-12.3">
+            <img src="Imagens/luzes-passo12.3.png">
+            <p>Uma dor de cabeça terrível te invade e você recobra lapsos de memória. Um tunel de luzes distrocidas. Uma
+                força gravitacional esmagadora. O calor enlouquecedor da roupa protetora. Até que...</p>
+            <button class="btn-proximo" data-proximo="12.4">A claridadde te incomoda</button>
+        </div>
+
+        <div class="passo" id="passo-12.4">
+            <p>Você se lembra, entre lapsos de memória e dores de cabeça, do laboratório, da construção da maior
+                invenção da
+                humanidade e do salto no tempo que a sua máquina era capaz de fazer. Sua missão era ir para o futuro,
+                ver os
+                estragos que iriamos fazer com o planeta, voltar para casa e tentar consertar tudo.</p>
+            <button class="btn-proximo" data-proximo="12.5">Aos poucos você sente suas forças indo embora</button>
+        </div>
+
+        <div class="passo" id="passo-12.5">
+            <p>Mas você não esperava que uma simples formiga comendo um cabo poderia causar um curto circuito na
+                máquina.
+                Você também não esperava que em apenas 30 anos o mundo estaria num estado apocalíptico, muito menos que
+                o
+                meio do estado de São Paulo se tornasse um deserto quente e seco. Você também não esperava que o defeito
+                na
+                máquina do tempo fosse mexer com o proprio espaço-tempo.</p>
+            <button class="btn-proximo" data-proximo="12.6">Você sente um frio invadindo seu corpo</button>
+        </div>
+
+        <div class="passo" id="passo-12.6">
+            <p>O baque da descoberta te atordoa, você não tem forças para lutar contra sua cruel realidade. Você está
+                preso
+                em loop temporal. Quantas vezes você já falhou? 4? 5? 10? A quantos anos você está morrendo e
+                recomeçando? A
+                quanto tempo você existe neste pequeno fragmento da realidade?</p>
+            <button class="btn-proximo" data-proximo="12.7">Você lentamente fecha os olhos</button>
+        </div>
+
+        <div class="passo" id="passo-12.7">
+            <img src="Imagens/relogio-passo12.7.png">
+            <p>Você finalmente aceita seu destino. Viver pra sempre nesse loop, sem conseguir ir adiante, sem poder
+                voltar atrás, você está fadado a morrer e morrer de novo. Assim como matamos o nosso planeta. Você luta
+                contra o cansaço, talvez ainda tenha algo que você pode fazer. Você ativa o monitor de pulso e grava um
+                vídeo torcendo para que o sinal do vídeo distorça o loop e chegue até você antes do salto, no passado. O cansaço
+                finalmente te vence. Você agora está em um vazio, você mexe sua cabeça, sente seu corpo parado mas sua
+                consiência ainda está nesse vazio, ela olha ao redor, você vê seu prórpio corpo e o vazio, sente que se
+                não acordar logo todas suas memórias irão embora. Uma luz surge no horizonte, brilhando cada vez mais
+                intensa.</p>
+            <button class="btn-proximo" data-proximo="12.8">A claridade te incomoda</button>
+        </div>
+
+        <div class="passo" id="passo-12.8">
+            <img src="Imagens/deserto-passo0.png">
+            <p>Você acorda em um deserto. O Sol brilhando mais forte do que você se lembra...</p>
+            <button class="btn-proximo" data-proximo="0">RECOMEÇAR</button>
+        </div>
+
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
